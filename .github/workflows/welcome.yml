@@ -1,4 +1,4 @@
-name: welcome pipeline
+name: Welcome Pipeline
 
 on:
   push:
@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: checkout code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Say Welcome
-        run: echo "welcome Ahmad code pushed to main."
+        run: echo "✅ Welcome Ahmad! Code pushed to main."
+
