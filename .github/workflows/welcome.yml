@@ -29,4 +29,10 @@ jobs:
       - name: test_main.py
         run: pytest
 
+      - name: Debug: list files
+  run: |
+    pwd
+    ls -la
+    ls -la test_main.py || echo "test_main.py not found"
+    cat test_main.py || echo "cannot read test_main.py"
 
