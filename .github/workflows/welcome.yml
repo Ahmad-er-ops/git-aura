@@ -26,7 +26,7 @@ jobs:
       - name: Run formatter check (black)
         run: black --check .
 
-      - name: Run tests
+      - name: test_main
         run: pytest
 
 
